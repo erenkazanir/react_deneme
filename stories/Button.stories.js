@@ -1,6 +1,8 @@
 import React from 'react'
 
 import Button from '../components/button'
+import NavigationButton from '../components/navigation-button'
+import Navigation from '../components/navigation'
 
 export default {
   title: 'Buttons'
@@ -8,27 +10,6 @@ export default {
 
 export const Normal = () => <Button>Save</Button>
 
-const Template = (args) => <Button {...args} />
+export const NavButton = () => <NavigationButton>Menu</NavigationButton>
 
-export const Primary = Template.bind({})
-Primary.args = {
-  primary: true,
-  label: 'Button'
-}
-
-export const Secondary = Template.bind({})
-Secondary.args = {
-  label: 'Button'
-}
-
-export const Large = Template.bind({})
-Large.args = {
-  size: 'large',
-  label: 'Button'
-}
-
-export const Small = Template.bind({})
-Small.args = {
-  size: 'small',
-  label: 'Button'
-}
+export const Nav = () => <Navigation />
