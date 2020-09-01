@@ -1,6 +1,7 @@
 import React from 'react'
 
 import NavigationButton from './navigation-button'
+import TitleBold from './title-bold'
 import {
   Twitter,
   Home,
@@ -14,51 +15,51 @@ import {
 
 import styles from './navigation.module.css'
 
-function Navigation() {
+function Navigation({ selectedKey }) {
   return (
     <nav className={styles.nav}>
       <NavigationButton>
         <Twitter />
       </NavigationButton>
 
-      <NavigationButton>
+      <NavigationButton selected={selectedKey === 'home'}>
         <Home />
-        <span>Home</span>
+        <TitleBold>Home</TitleBold>
       </NavigationButton>
 
-      <NavigationButton>
+      <NavigationButton selected={selectedKey === 'explore'}>
         <Explore />
-        <span>Explore</span>
+        <TitleBold>Explore</TitleBold>
       </NavigationButton>
 
-      <NavigationButton>
+      <NavigationButton notify={17} selected={selectedKey === 'notification'}>
         <Notification />
-        <span>Notification</span>
+        <TitleBold>Notification</TitleBold>
       </NavigationButton>
 
-      <NavigationButton>
+      <NavigationButton selected={selectedKey === 'message'}>
         <Message />
-        <span>Message</span>
+        <TitleBold>Message</TitleBold>
       </NavigationButton>
 
-      <NavigationButton>
+      <NavigationButton selected={selectedKey === 'bookmark'}>
         <Bookmark />
-        <span>Bookmark</span>
+        <TitleBold>Bookmark</TitleBold>
       </NavigationButton>
 
-      <NavigationButton>
+      <NavigationButton selected={selectedKey === 'lists'}>
         <Lists />
-        <span>Lists</span>
+        <TitleBold>Lists</TitleBold>
       </NavigationButton>
 
-      <NavigationButton>
+      <NavigationButton selected={selectedKey === 'profile'}>
         <Twitter />
-        <span>Profile</span>
+        <TitleBold>Profile</TitleBold>
       </NavigationButton>
 
       <NavigationButton>
         <More />
-        <span>More</span>
+        <TitleBold>More</TitleBold>
       </NavigationButton>
     </nav>
   )
