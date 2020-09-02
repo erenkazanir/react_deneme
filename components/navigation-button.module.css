@@ -1,21 +1,11 @@
 .navButton {
     position: relative;
-    color: var(--c-text-color);
     padding: 20px;
-    border-radius: 99px;
-    display: flex;
-    align-items: center;
-    transition:var(--fade);
-
-&:hover {
-    background-color: var(--c-thema-20);
-    color:var(--c-thema);
-}
 
 svg {
     font-size: 26px;
 
-&+* {
+& + * {
     margin-left: 20px;
     margin-right: 15px;
 }
@@ -24,10 +14,10 @@ svg {
 }
 
 .navButtonSelected {
-    color: var(--c-thema);
+    color: var(--c-theme);
 }
 
-.notify{
+.notify {
     position: absolute;
     left: 30px;
     top: 12px;
@@ -37,7 +27,7 @@ svg {
     border-radius: 17px;
     display: flex;
     align-items: center;
-    background-color: var(--c-thema);
+    background-color: var(--c-theme);
     color: var(--c-text-color);
     font-size: 11px;
     border: 1px solid var(--c-primary);
