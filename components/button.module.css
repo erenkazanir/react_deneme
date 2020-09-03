@@ -20,4 +20,6 @@
 
 .bigButton{
     height: 47px !important;
+    width: 47px;
+    min-width: 47px !important;
 }
