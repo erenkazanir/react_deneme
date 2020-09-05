@@ -1,6 +1,6 @@
 import React from 'react'
 import cn from 'classnames'
-import styles from './button.module.css'
+import styles from './style.module.css'
 import Link from 'next/link'
 
 function LinkButton({ href, children, ...props }) {
@@ -19,12 +19,17 @@ function BaseButton({ children, ...props }) {
   )
 }
 
-function Button({ full = false, children, className, ...props }) {
+function Index({ big = false, full = false, children, className, ...props }) {
   const Comp = props.href ? LinkButton : BaseButton
 
   return (
     <Comp
-      className={cn(styles.button, full && styles.fullWidth, className)}
+      className={cn(
+        styles.button,
+        big && styles.bigButton,
+        full && styles.fullWidth,
+        className
+      )}
       {...props}
     >
       {children}
@@ -32,4 +37,4 @@ function Button({ full = false, children, className, ...props }) {
   )
 }
 
-export default Button
+export default Index

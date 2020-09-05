@@ -1,8 +1,8 @@
 import React from 'react'
 
 import * as Icons from '../components/icons'
-import Photo from '../components/photo'
-import ProfileBox from '../components/profile-box'
+import Index from '../components/photo'
+import Index from '../components/profile-box'
 
 export default {
   title: 'Icons'
@@ -36,5 +36,5 @@ export const Icon = () => (
   </div>
 )
 
-export const ProfilePhoto = () => <Photo />
-export const Box = () => <ProfileBox />
+export const ProfilePhoto = () => <Index />
+export const Box = () => <Index />

@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 
 function SvgExploreFill(props) {
   return (
@@ -8,7 +8,7 @@ function SvgExploreFill(props) {
         fill="currentColor"
       />
     </svg>
-  );
+  )
 }
 
-export default SvgExploreFill;
+export default SvgExploreFill

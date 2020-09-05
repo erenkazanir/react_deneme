@@ -1,8 +1,8 @@
 import React from 'react'
 import cn from 'classnames'
-import styles from './photo.module.css'
+import styles from './style.module.css'
 
-function Photo({
+function Index({
   src = 'https://media-exp1.licdn.com/dms/image/C4E03AQHWJFy_jXvFmg/profile-displayphoto-shrink_200_200/0?e=1604534400&v=beta&t=OXMoZUA5N1hb4PABmSIVNTC3uRnl4Xm-_Lssg30tL5M',
   alt,
   size = 47
@@ -14,4 +14,4 @@ function Photo({
   )
 }
 
-export default Photo
+export default Index

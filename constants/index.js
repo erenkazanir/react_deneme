@@ -1,5 +1,6 @@
 import * as Icon from '../components/icons'
 import React from 'react'
+
 export default {
   TABLET_SIZE: 980,
   DESKTOP_SIZE: 1270
@@ -9,8 +10,8 @@ export const MENU = [
   {
     key: 'twitter',
     path: '/',
-    icon: <Icon.Twitter style={{ fontSize: 30, color: 'white' }} />,
-    iconSelected: <Icon.Twitter style={{ fontSize: 30, color: 'white' }} />,
+    icon: <Icon.Twitter style={{ fontSize: 30 }} />,
+    iconSelected: <Icon.Twitter style={{ fontSize: 30 }} />,
     title: '',
     notify: 0
   },

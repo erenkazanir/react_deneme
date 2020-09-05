@@ -1,9 +1,9 @@
 import React from 'react'
 import cn from 'classnames'
 
-import styles from './text-body.module.css'
+import styles from './body.module.css'
 
-function TextBody({ bold = false, className, children, ...props }) {
+function Body({ bold = false, className, children, ...props }) {
   return (
     <span
       className={cn([styles.body, bold && styles.bold, className])}
@@ -14,4 +14,4 @@ function TextBody({ bold = false, className, children, ...props }) {
   )
 }
 
-export default TextBody
+export default Body

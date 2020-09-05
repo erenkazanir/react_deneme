@@ -1,28 +1,21 @@
 import React from 'react'
 import cn from 'classnames'
 
-import Button from './button'
+import Index from '../button'
 
-import styles from './navigation-button.module.css'
+import styles from './button.module.css'
 
-function NavigationButton({
-  href,
-  notify,
-  selected,
-  children,
-  className,
-  ...props
-}) {
+function Button({ href, notify, selected, children, className, ...props }) {
   return (
-    <Button
+    <Index
       className={cn(styles.navButton, selected && styles.navButtonSelected)}
       href={href}
       {...props}
     >
       {notify > 0 && <span className={styles.notify}> {notify}</span>}
       {children}
-    </Button>
+    </Index>
   )
 }
 
-export default NavigationButton
+export default Button

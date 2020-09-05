@@ -1,10 +1,10 @@
 .box {
     padding: 10px;
 
-&
-:hover {
-    color: var(--c-text-color);
-}
+    &
+    :hover {
+        color: var(--c-text-color);
+    }
 
 }
 
@@ -12,9 +12,9 @@
     margin-left: 10px;
     margin-right: 20px;
 
-* {
-    display: block;
-}
+    * {
+        display: block;
+    }
 
 }
 

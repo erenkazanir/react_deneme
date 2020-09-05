@@ -1,15 +1,15 @@
 import React from 'react'
 import cn from 'classnames'
 
-import useWindowSize from '../hooks/useWindowSize'
-import styles from './layout.module.css'
+import useWindowSize from '../../hooks/useWindowSize'
+import styles from './style.module.css'
 
-import Sidebar from './col-sidebar'
-import CONST from '../constants'
-import Main from './col-main'
-import Extra from './col-extra'
+import Sidebar from '../col/sidebar'
+import CONST from '../../constants'
+import Main from '../col/main'
+import Extra from '../col/extra'
 
-function Layout({ children }) {
+function Index({ children }) {
   const size = useWindowSize()
 
   return (
@@ -19,10 +19,8 @@ function Layout({ children }) {
       <Main>{children}</Main>
 
       {size.width > CONST.TABLET_SIZE && <Extra>extra</Extra>}
-
-      {children}
     </div>
   )
 }
 
-export default Layout
+export default Index
