@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Index from '../components/layout'
+import Layout from '../components/layout'
 
 function HomePage() {
-  return <Index>Anasayfa</Index>
+  return <Laoyut>Anasayfa</Laoyut>
 }
 
 export default HomePage

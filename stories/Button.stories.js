@@ -2,35 +2,36 @@ import React from 'react'
 
 import { withKnobs, text, boolean, number } from '@storybook/addon-knobs'
 
-import Index from '../components/button'
-import Button from '../components/navigation/button'
+import Button from '../components/button'
+import NavigationButton from '../components/navigation/button'
 import Navigation from '../components/navigation/navigation'
 import { Home } from '../components/icons'
-import Title from '../components/text/title'
-import Index from '../components/theme-button'
-import Index from '../components/stack'
+import TextTitle from '../components/text/title'
+import ThemeButton from '../components/theme-button'
+import Stack from '../components/stack'
 
 export default {
   title: 'Buttons',
   decorators: [withKnobs]
 }
 
-export const Normal = () => <Index>Save</Index>
+export const Normal = () => <Button>Save</Button>
+
 export const Theme = () => (
-  <Index column gap={20}>
-    <Index>Tweet</Index>
-    <Index full>Tweet Full</Index>
-    <Index full={true} big>
+  <Stack column gap={20}>
+    <ThemeButton>Tweet</ThemeButton>
+    <ThemeButton full>Tweet Full</ThemeButton>
+    <ThemeButton full={true} big>
       Tweet Full Big
-    </Index>
-  </Index>
+    </ThemeButton>
+  </Stack>
 )
 
 export const NavButton = () => (
-  <Button>
+  <NavigationButton>
     <Home />
-    <Title>Home</Title>
-  </Button>
+    <TextTitle>Home</TextTitle>
+  </NavigationButton>
 )
 
 export const Nav = () => {

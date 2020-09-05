@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Index from '../components/layout'
+import Layout from '../components/layout'
 
 function NotificationPage() {
-  return <Index>Notifications</Index>
+  return <Layout>Notifications</Layout>
 }
 
 export default NotificationPage
