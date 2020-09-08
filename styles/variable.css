@@ -12,19 +12,19 @@
 
 .dim:root {
     --c-primary: rgb(21, 32, 43);
+    --c-text-color:#fff;
     --c-border-color: #2f3336;
     --c-gray: #6e7670;
     --c-dark-gray: #202327;
-    --c-text-color: #fff;
     --fade: 120ms;
 }
 
 .dark:root {
     --c-primary: #000;
+    --c-text-color: #fff;
     --c-border-color: #2f3336;
     --c-gray: #6e7670;
     --c-dark-gray: #202327;
-    --c-text-color: #fff;
     --fade: 120ms;
 }
 

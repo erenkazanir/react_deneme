@@ -19,7 +19,7 @@ function BaseButton({ children, ...props }) {
   )
 }
 
-function Index({ big = false, full = false, children, className, ...props }) {
+function Button({ big = false, full = false, children, className, ...props }) {
   const Comp = props.href ? LinkButton : BaseButton
 
   return (
@@ -37,4 +37,4 @@ function Index({ big = false, full = false, children, className, ...props }) {
   )
 }
 
-export default Index
+export default Button
